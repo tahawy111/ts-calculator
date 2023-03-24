@@ -1,0 +1,72 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="/calculator-svgrepo-com.svg">
+  <title>Calculator</title>
+</head>
+
+<body class="flex justify-center font-mono items-center min-h-screen bg-slate-700 w-full">
+  <div class="calc grid grid-cols-[repeat(4,80px)]">
+    <input type="text" placeholder="0" class="col-span-4 h-24 text-end px-9 text-4xl outline-none" id="calc">
+    <button
+      class="transition-colors duration-75 bg-slate-800 border-none outline-none text-3xl text-gray-100 px-4 py-6 hover:bg-slate-900"
+      onclick="Clear()">C</button>
+    <button
+      class="transition-colors duration-75 bg-red-600 border-none outline-none text-3xl text-gray-100 px-4 py-6 hover:bg-red-700"
+      onclick="Delete()">Del</button>
+    <button
+      class="transition-colors duration-75 bg-slate-800 border-none outline-none text-3xl text-gray-100 px-4 py-6 hover:bg-slate-900"
+      onclick="display(`%`)">%</button>
+    <button
+      class="transition-colors duration-75 bg-slate-800 border-none outline-none text-3xl text-gray-100 px-4 py-6 hover:bg-slate-900"
+      onclick="display(`/`)">/</button>
+    <button
+      class="transition-colors duration-75 bg-gray-900 border-none outline-none text-3xl text-gray-100 px-4 py-6 hover:bg-gray-600"
+      onclick="display(`7`)">7</button>
+    <button
+      class="transition-colors duration-75 bg-gray-900 border-none outline-none text-3xl text-gray-100 px-4 py-6 hover:bg-gray-600"
+      onclick="display(`8`)">8</button>
+    <button
+      class="transition-colors duration-75 bg-gray-900 border-none outline-none text-3xl text-gray-100 px-4 py-6 hover:bg-gray-600"
+      onclick="display(`9`)">9</button>
+    <button
+      class="transition-colors duration-75 bg-slate-800 border-none outline-none text-3xl text-gray-100 px-4 py-6 hover:bg-slate-900"
+      onclick="display(`*`)">*</button>
+    <button
+      class="transition-colors duration-75 bg-gray-900 border-none outline-none text-3xl text-gray-100 px-4 py-6 hover:bg-gray-600"
+      onclick="display(`4`)">4</button>
+    <button
+      class="transition-colors duration-75 bg-gray-900 border-none outline-none text-3xl text-gray-100 px-4 py-6 hover:bg-gray-600"
+      onclick="display(`5`)">5</button>
+    <button
+      class="transition-colors duration-75 bg-gray-900 border-none outline-none text-3xl text-gray-100 px-4 py-6 hover:bg-gray-600"
+      onclick="display(`6`)">6</button>
+    <button
+      class="transition-colors duration-75 bg-slate-800 border-none outline-none text-3xl text-gray-100 px-4 py-6 hover:bg-slate-900"
+      onclick="display(`+`)">+</button>
+    <button
+      class="transition-colors duration-75 bg-gray-900 border-none outline-none text-3xl text-gray-100 px-4 py-6 hover:bg-gray-600"
+      onclick="display(`1`)">1</button>
+    <button
+      class="transition-colors duration-75 bg-gray-900 border-none outline-none text-3xl text-gray-100 px-4 py-6 hover:bg-gray-600"
+      onclick="display(`2`)">2</button>
+    <button
+      class="transition-colors duration-75 bg-gray-900 border-none outline-none text-3xl text-gray-100 px-4 py-6 hover:bg-gray-600"
+      onclick="display(`3`)">3</button>
+    <button
+      class="transition-colors duration-75 bg-slate-800 border-none outline-none text-3xl text-gray-100 px-4 py-6 hover:bg-slate-900"
+      onclick="display(`-`)">-</button>
+    <button
+      class="transition-colors duration-75 bg-gray-900 border-none outline-none text-3xl text-gray-100 px-4 py-6 hover:bg-gray-600"
+      onclick="display(`0`)">0</button>
+    <button
+      class="transition-colors duration-75 bg-slate-800 border-none outline-none text-3xl text-gray-100 px-4 py-6 hover:bg-slate-900"
+      onclick="display(`.`)">.</button>
+    <button class="bg-blue-700 border-none outline-none text-3xl text-gray-100 px-4 py-6 hover:bg-blue-800 col-span-2"
+      onclick="calc(`=`)">=</button>
+  </div>
+  <script src="/src/main.ts"></script>
+</body>
+
+</html>
